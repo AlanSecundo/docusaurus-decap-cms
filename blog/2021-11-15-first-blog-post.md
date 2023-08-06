@@ -1,5 +1,5 @@
 ---
-title: First Blog Post
+title: First post edited
 slug: first-blog-post
 tags:
   - foo
@@ -9,5 +9,6 @@ authors:
     title: Instruction Writer
     url: https://github.com/garrison0
     image_url: https://avatars.githubusercontent.com/u/4089393?v=4
+    imageUrl: https://jeanmayorga.com/avatar.svg
 ---
 Teste blog post
