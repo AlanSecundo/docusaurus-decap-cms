@@ -11,7 +11,7 @@ publish_mode: editorial_workflow
 
 i18n:
   structure: multiple_folders
-  locales: [en, pt, es]
+  locales: [pt, en, es]
   default_locale: pt
 
 collections:
@@ -32,8 +32,4 @@ collections:
     fields:
       - { name: title, label: Title, widget: string, i18n: true }
       - { name: body, label: Body, widget: markdown, i18n: true }
-      - { name: slug, label: Slug, widget: string, i18n: true }
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        i18n: true
+      - { name: slug, label: URL, widget: string, i18n: true }
