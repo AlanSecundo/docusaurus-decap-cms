@@ -16,9 +16,9 @@ i18n:
 
 collections:
   - name: docs
-    label: "docs"
+    label: "documentation"
     i18n: true
-    folder: docs
+    folder: i18n
     identifier_field: title
     extension: md
     widget: "list"

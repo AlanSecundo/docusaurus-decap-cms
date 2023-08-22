@@ -30,6 +30,17 @@ const config = {
   i18n: {
     defaultLocale: 'pt',
     locales: ['pt', 'en', 'es'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-US',
+      },
+      pt: {
+        htmlLang: 'pt-BR',
+      },
+      es: {
+        htmlLang: 'es',
+      },
+    },
   },
 
   presets: [

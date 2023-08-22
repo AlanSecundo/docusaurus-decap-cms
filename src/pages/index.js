@@ -4,20 +4,27 @@ import Layout from "@theme/Layout";
 
 import styles from "./index.module.css";
 
+import Translate from "@docusaurus/Translate";
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout>
       <main>
         <div className={styles.homePage}>
           <div className={styles.content}>
             <div className={styles.introTitle}>
-              Product
+              <Translate
+                id="homepage.title.product"
+              >
+                b
+              </Translate>
               <br />
-              Guide
+              <Translate
+                id="homepage.title.guide"
+              >
+                a
+              </Translate>
             </div>
             <div className={styles.textContainer}>
               <div className={styles.line}></div>

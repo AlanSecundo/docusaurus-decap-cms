@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "DB1 Product Guide",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.The Guide": {
+    "message": "The Guide",
+    "description": "Navbar item with label The Guide"
+  }
+}
