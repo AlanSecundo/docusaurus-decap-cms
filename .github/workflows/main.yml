@@ -17,8 +17,16 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Copy files
-        run: cp -R docs/pt/. i18n/pt/docusaurus-plugin-content-docs/current/
+      - name: Copy files if folder exists
+        id: copy_files
+        run: |
+          for folder in pt es en; do
+            if [ -d docs/"$folder" ]; then
+              cp -R docs/"$folder"/. i18n/"$folder"/docusaurus-plugin-content-docs/current/
+            else
+              echo "Folder $folder does not exist."
+            fi
+          done
 
       - name: Install dependencies
         run: npm install
