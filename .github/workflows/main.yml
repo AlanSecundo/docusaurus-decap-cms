@@ -19,7 +19,7 @@ jobs:
 
       - name: Copy files
         run: |
-          cp -R docs/pt/* i18n/pt/docusaurus-plugin-content-docs/current/
+          cp -R docs/pt/* i18n/pt/docusaurus-plugin-content-docs/current
 
       - name: Install dependencies
         run: npm install
