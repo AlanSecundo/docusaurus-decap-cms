@@ -269,5 +269,14 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "homepage.title.product": {
+    "message": "Guía de"
+  },
+  "homepage.title.guide": {
+    "message": "Producto"
+  },
+  "homepage.text": {
+    "message": "Una guía de productos realizada por DB1 Global Software para compartir y expresar nuestra opinión sobre cómo se debe llevar a cabo el proceso de desarrollo de software."
   }
 }

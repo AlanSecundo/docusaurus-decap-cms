@@ -14,25 +14,18 @@ export default function Home() {
         <div className={styles.homePage}>
           <div className={styles.content}>
             <div className={styles.introTitle}>
-              <Translate
-                id="homepage.title.product"
-              >
-                b
-              </Translate>
+              <Translate id="homepage.title.product">Guia de</Translate>
               <br />
-              <Translate
-                id="homepage.title.guide"
-              >
-                a
-              </Translate>
+              <Translate id="homepage.title.guide">Produto</Translate>
             </div>
             <div className={styles.textContainer}>
               <div className={styles.line}></div>
               <div className={styles.subText}>
-                Lorem ipsum dolor sit amet. Cum voluptatum incidunt ad pariatur
-                vitae et fugiat pariatur et rerum voluptatem et tempore fuga.
-                Vel commodi eius ea assumenda quibusdam vel quia corrupti eum
-                officia voluptas ut dolores velit.
+                <Translate id="homepage.text">
+                  Um guia de produto feito pela DB1 Global Software para
+                  compartilhar e expressar nossa opinião sobre como o processo
+                  de desenvolvimento de Software deve ser conduzido.
+                </Translate>
               </div>
             </div>
           </div>

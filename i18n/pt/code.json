@@ -275,5 +275,8 @@
   },
   "homepage.title.guide": {
     "message": "Produto"
+  },
+  "homepage.text": {
+    "message": "Um guia de produto feito pela DB1 Global Software para compartilhar e expressar nossa opinião sobre como o processo de desenvolvimento de Software deve ser conduzido."
   }
 }
