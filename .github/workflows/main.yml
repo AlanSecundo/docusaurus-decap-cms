@@ -22,6 +22,7 @@ jobs:
         run: |
           for folder in pt es en; do
             if [ -d docs/"$folder" ]; then
+              echo "Copying files from $folder."
               cp -R docs/"$folder"/. i18n/"$folder"/docusaurus-plugin-content-docs/current/
             else
               echo "Folder $folder does not exist."
