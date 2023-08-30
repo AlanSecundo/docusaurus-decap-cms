@@ -18,7 +18,10 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install 
+        run: npm install
+
+      - name: Copy files
+        run: cp -R docs/pt/* i18n/pt/docusaurus-plugin-content-docs/current/
 
       - name: Build the application
         run: npm run build
