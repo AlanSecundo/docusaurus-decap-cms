@@ -2,6 +2,7 @@ backend:
   name: github
   branch: main
   repo: AlanSecundo/docusaurus-decap-cms
+  base_url: http://oauth-alan.us-east-1.elasticbeanstalk.com/
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
