@@ -17,15 +17,11 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Copy files from folder pt
-        id: copy_files_pt
-        run: cp -R docs/pt/. docs/
-
       - name: Copy and delete files if folder exists
         id: copy_files
         run: |
           for category in analysis career good-practices; do
-            cp -R docs/$category/pt/. docs/$category/
+            cp -R docs/"$category"/pt/. docs/"$category"/
             for folder in pt es en; do
               if [ -d docs/"$category"/"$folder" ]; then
                 echo "Copying $category files from $folder."
