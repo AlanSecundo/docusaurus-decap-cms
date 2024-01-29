@@ -24,14 +24,17 @@ jobs:
       - name: Copy and delete files if folder exists
         id: copy_files
         run: |
-          for folder in pt es en; do
-            if [ -d docs/"$folder" ]; then
-              echo "Copying files from $folder."
-              cp -R docs/"$folder"/. i18n/"$folder"/docusaurus-plugin-content-docs/current/
-              rm -r docs/"$folder"
-            else
-              echo "Folder $folder does not exist."
-            fi
+          for category in analysis carreer good-practices; do
+            cp -R docs/"$category"/pt/. docs/"$category"/
+            for folder in pt es en; do
+              if [ -d docs/"$category"/"$folder" ]; then
+                echo "Copying $category files from $folder."
+                cp -R docs/"$category"/"$folder"/. i18n/"$folder"/docusaurus-plugin-content-docs/current/"$category"/
+                rm -r docs/"$category"/"$folder"/
+              else
+                echo "Folder $folder or $category does not exist."
+              fi
+            done
           done
 
       - name: Install dependencies
