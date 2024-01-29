@@ -2,7 +2,7 @@ backend:
   name: github
   branch: main
   repo: AlanSecundo/docusaurus-decap-cms
-  base_url: http://oauth-alan.us-east-1.elasticbeanstalk.com/
+
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
@@ -13,23 +13,57 @@ publish_mode: editorial_workflow
 i18n:
   structure: multiple_folders
   locales: [pt, en, es]
-  default_locale: pt
+  default_locale: en
 
 collections:
-  - name: docs
-    label: "documentation"
+  - name: analysis
+    label: "Análise"
     i18n: true
-    folder: docs
+    folder: docs/analysis
     identifier_field: title
     extension: md
     widget: "list"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: docs/{{year}}/{{month}}/{{title}}
+    preview_path: docs/analysis/{{year}}/{{month}}/{{title}}
     preview_path_date_field: published_at
     nested:
-      depth: 100 # max depth to show in the collection tree
-      summary: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string, i18n: true }
+      - { name: body, label: Body, widget: markdown, i18n: true }
+  - name: bestPractices
+    label: "Boas práticas"
+    i18n: true
+    folder: docs/good-practices
+    identifier_field: title
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: docs/good-practices/{{year}}/{{month}}/{{title}}
+    preview_path_date_field: published_at
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string, i18n: true }
+      - { name: body, label: Body, widget: markdown, i18n: true }
+  - name: career
+    label: "Carreira"
+    i18n: true
+    folder: docs/career
+    identifier_field: title
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: docs/career/{{year}}/{{month}}/{{title}}
+    preview_path_date_field: published_at
+    nested:
+      depth: 100
+      summary: "{{title}}"
     fields:
       - { name: title, label: Title, widget: string, i18n: true }
       - { name: body, label: Body, widget: markdown, i18n: true }

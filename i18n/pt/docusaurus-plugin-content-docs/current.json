@@ -2,5 +2,14 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.docs.category.career": {
+    "message": "Carreira"
+  },
+  "sidebar.docs.category.bestPractices": {
+    "message": "Práticas recomendadas"
+  },
+  "sidebar.docs.category.analysis": {
+    "message": "Análise para desenvolvimento de sofware"
   }
 }
